@@ -22,7 +22,6 @@
  Therefore, this is one of the reasons we use NextJS
  For fetching data I used axios
 
-# Another To Do List App.
 
 **Goal:**
 
