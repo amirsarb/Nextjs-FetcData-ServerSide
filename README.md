@@ -18,9 +18,9 @@
 <hr />
 
 # This is is a server-side project in NextJS
-# Fetching data can be time consuming when we do it on the client side.
-# Therefore, this is one of the reasons we use NextJS
-# For fetching data I used axios
+ Fetching data can be time consuming when we do it on the client side.
+ Therefore, this is one of the reasons we use NextJS
+ For fetching data I used axios
 
 # Another To Do List App.
 
