@@ -1,5 +1,5 @@
 <div>
-  <h1 align="center">This is is a server-side project in NextJS 🧑‍💻</h1>
+  <h1 align="center">This is a server-side project in NextJS 🧑‍💻</h1>
   <strong>
    Fetching data can be time consuming when we do it on the client side.
   </strong>
