@@ -26,8 +26,32 @@
 **Goal:**
 
 - Our goal is to learn how to use server-side function in NextJS by using getInitialProps()
-- & How to override the default App in order to use Navbar.
+- & How to override the default App in order to use repetitive content on pages like Navbar.
 
+# How to use getInitialProps()
+This is a sample of using it:
+```javascript
+index.getInitialProps=async()=>{
+   
+    const res = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    const posts = res.data
+    return { posts: posts }
+}
+```
+
+# How to use custom App in NextJS
+When we have repetitive content on pages, like header and footer, instead of importing it in all pages, we can use a simple way by overriding the _app.js, we just need to create a file in ./pages/_app.js, in the following every content **`before`** component, will load at the beginning of every page and every content **`after`** that, will be load at the end.
+
+```javascript
+import Navbar from "./Navbar"
+export default function MyApp({ Component, pageProps }) {
+    return (
+    <div>
+      <Navbar />
+    <Component {...pageProps} />
+    </div>)
+  }
+```
 
 **Techs:**
 
@@ -38,7 +62,7 @@
 - HTML
 
 
-** Used API **
+** API **
 
 - [https://jsonplaceholder.typicode.com/posts/](https://jsonplaceholder.typicode.com/posts/)
 
@@ -53,7 +77,7 @@ Prerequisites:
 ### DISCLAIMER: THIS IS NOT A REACT.JS BEGGINNERS GUIDE/TUTORIAL
 
 
-In the project directory, you can run bellow comman to install all dependencies:
+In the project directory, you can run bellow command to install all dependencies:
 
 ### `npm i`
 
