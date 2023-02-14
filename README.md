@@ -74,8 +74,6 @@ Prerequisites:
 - NPM must be installed in your unit
 - Have basic knowledge about React.js / Next.js framework
 
-### DISCLAIMER: THIS IS NOT A REACT.JS BEGGINNERS GUIDE/TUTORIAL
-
 
 In the project directory, you can run bellow command to install all dependencies:
 
